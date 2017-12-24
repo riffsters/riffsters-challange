@@ -1,8 +1,0 @@
-secret:
-  table_name: "devops-challenge"
-  key: "thedoctor"
-health_check:
-  container: "https://github.com/SpotIM/devops-challenge"
-  project: "https://github.com/SpotIM/devops-challenge"
-aws:
-  region_name: "us-east-1"
