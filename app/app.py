@@ -34,6 +34,6 @@ class App(object):
         """
         data = {'container' : "{}".format(container), 'project' : "{}"\
                 .format(project), 'status' : "healthy"}
-        health = json.dumps(data, sort_keys=True, indent=4)
+        health = json.dumps(data)
 
         return health
