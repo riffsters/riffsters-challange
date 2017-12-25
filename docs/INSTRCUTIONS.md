@@ -1,4 +1,4 @@
-###Instructions for how to run the docker locally
+### Instructions for how to run the docker locally
 1. Pull the image: **docker pull riffo/devops_challenge**
 2. Run docker locally with the following command: **docker run -e "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" -e "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" -d -p 5000:5000 riffo/devops_challenge**
 3. Enter in your browser the following address to get:
