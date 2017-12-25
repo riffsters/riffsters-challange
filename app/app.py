@@ -17,9 +17,10 @@ class App(object):
         """
         with open("app/config.yml", 'r') as ymlfile:
             cfg = yaml.load(ymlfile)
-        self.client = boto3.client('dynamodb', region_name='{}'.format(cfg['aws']['region_name']), \
-        aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],\
-        aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'])
+        self.client = boto3.client('dynamodb', region_name='{}'.format(cfg['aws']['region_name']))
+        # self.client = boto3.client('dynamodb', region_name='{}'.format(cfg['aws']['region_name']), \
+        # aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],\
+        # aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'])
 
 
     def fetch_secret(self, table_name, key):
