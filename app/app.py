@@ -5,7 +5,6 @@ import json
 import yaml
 import boto3
 
-
 class App(object):
     """
     Application class that holds the logic functios
